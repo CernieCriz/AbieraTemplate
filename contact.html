@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact || ISAT U 120th Anniversary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="images/ISAT-U-logo-2.png" type="image/x-icon" />
+</head>
+<body>
+
+
+  <header class="site-header">
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" class="logo" aria-label="ISAT-U Home">
+        <img src="images/ISAT-U-logo-2.png" alt="ISAT-U Logo" />
+      </a>
+      <h1> ILOILO SCIENCE AND TECHNOLOGY UNIVERSITY</h1>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+
+      <ul id="nav-menu" class="nav-links">
+        <li><a href="index.html" data-nav>Home</a></li>
+        <li><a href="about.html" data-nav>About</a></li>
+        <li><a href="contact.html" class="active" data-nav>Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" role="region" aria-label="ISAT U 120th Anniversary">
+    <!-- Hero Slideshow Background -->
+    <div class="hero-slideshow">
+      <div class="hero-slide active">
+        <img src="images/isat.jpg" alt="ISAT-U Main Campus">
+      </div>
+      <div class="hero-slide">
+        <img src="images/miagao.jpg" alt="ISAT-U Miagao Campus">
+      </div>
+      <div class="hero-slide">
+        <img src="images/barotac.jpg" alt="ISAT-U Barotac Nuevo Campus">
+      </div>
+      <div class="hero-slide">
+        <img src="images/leon.jpg" alt="ISAT-U Leon Campus">
+      </div>
+      <div class="hero-slide">
+        <img src="images/dumangas.jpg" alt="ISAT-U Dumangas Campus">
+      </div>
+    </div>
+    <div class="hero-inner">
+      <h1><span>Get</span> in Touch</h1>
+    </div>
+
+  </section>
+
+  <main id="main" class="contact container">
+    <section class="contact-grid section">
+      <div class="contact-info">
+        <h2>Organizing Committee</h2>
+        <ul>
+          <li>Email: <a href="mailto:anniv@isat-u.edu.ph">anniv@isat-u.edu.ph</a></li>
+          <li>Phone: (033) 123-4567</li>
+          <li>Address: ISAT-U Miagao Campus</li>
+        </ul>
+
+        <h2>Office Hours</h2>
+        <p>Mon–Fri, 8:00 AM – 5:00 PM</p>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="field">
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" required placeholder="Juan Dela Cruz" />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="field">
+          <label for="msg">Message</label>
+          <textarea id="msg" name="msg" rows="5" required placeholder="How can we help?"></textarea>
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="btn btn-gold">Send Message</button>
+        </div>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 ISAT-U • #FutureReadyISATUat120</p>
+  </footer>
+
+  <dialog class="lightbox" aria-label="Image viewer">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img src="" alt="" />
+  </dialog>
+
+  <button class="to-top" aria-label="Back to top">Back to top</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
